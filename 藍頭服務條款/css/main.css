@@ -1,0 +1,85 @@
+body {
+  background: #a3d4fd;
+  font-family: "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header, main, footer {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 2em 0 1em 0;
+  text-align: center;
+}
+
+main {
+  padding: 1em 0 2em 0;
+}
+
+section {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  padding: 2em;
+  margin-bottom: 2em;
+}
+
+h1, h2 {
+  color: #1976d2;
+}
+
+ul {
+  margin-left: 1.5em;
+}
+
+a {
+  color: #1976d2;
+  text-decoration: underline;
+}
+
+.btn-row {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.invite-btn {
+  display: inline-block;
+  padding: 0.7em 1.5em;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  transition: background 0.2s;
+}
+
+.invite-btn.blue {
+  background: #1976d2;
+}
+
+.invite-btn.blue:hover {
+  background: #1565c0;
+}
+
+.invite-btn.green {
+  background: #43a047;
+}
+
+.invite-btn.green:hover {
+  background: #388e3c;
+}
+
+.site-footer {
+  text-align: center;
+  margin: 2em 0 1em 0;
+  background: #a3d4fd;
+  padding: 1em 0;
+  border-radius: 8px;
+  font-size: 1em;
+  color: #333;
+}
