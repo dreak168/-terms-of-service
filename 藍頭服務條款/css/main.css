@@ -1,11 +1,14 @@
 body {
-  background: #a3d4fd;
+  background: linear-gradient(135deg, #e0f7fa 0%, #e8eaf6 100%);
+  background-attachment: fixed;
+  color: #334155;
   font-family: "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-header, main, footer {
+header,
+main {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
@@ -21,15 +24,19 @@ main {
 }
 
 section {
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   padding: 2em;
   margin-bottom: 2em;
 }
 
-h1, h2 {
-  color: #1976d2;
+h1,
+h2 {
+  color: #334155;
 }
 
 ul {
@@ -37,7 +44,7 @@ ul {
 }
 
 a {
-  color: #1976d2;
+  color: #2196f3;
   text-decoration: underline;
 }
 
@@ -50,36 +57,47 @@ a {
 
 .invite-btn {
   display: inline-block;
-  padding: 0.7em 1.5em;
-  border-radius: 6px;
+  padding: 16px 32px;
+  border-radius: 50px;
   font-weight: bold;
   text-decoration: none;
   color: #fff;
-  transition: background 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.invite-btn:hover {
+  transform: translateY(-2px);
 }
 
 .invite-btn.blue {
-  background: #1976d2;
+  background: #2196f3;
+  box-shadow: 0 4px 15px rgba(33, 150, 243, 0.4);
 }
 
 .invite-btn.blue:hover {
-  background: #1565c0;
+  background: #1e88e5;
+  box-shadow: 0 6px 20px rgba(33, 150, 243, 0.6);
 }
 
 .invite-btn.green {
   background: #43a047;
+  box-shadow: 0 4px 15px rgba(67, 160, 71, 0.4);
 }
 
 .invite-btn.green:hover {
   background: #388e3c;
+  box-shadow: 0 6px 20px rgba(67, 160, 71, 0.6);
 }
 
 .site-footer {
-  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 2em 0 1em 0;
-  background: #a3d4fd;
+  background: transparent;
   padding: 1em 0;
-  border-radius: 8px;
   font-size: 1em;
-  color: #333;
+  color: #64748b;
 }
